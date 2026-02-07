@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>הרגלים טובים · MVP</title>
+  <style>
+    body{font-family:system-ui,Arial; margin:0; background:#0b1220; color:#e7eefc;}
+    .wrap{max-width:980px; margin:0 auto; padding:32px 20px;}
+    .card{background:#121a2b; border:1px solid #22304e; border-radius:16px; padding:18px;}
+    .grid{display:grid; gap:14px;}
+    @media(min-width:800px){ .grid3{grid-template-columns:repeat(3,1fr);} .grid2{grid-template-columns:1.2fr .8fr;} }
+    h1{font-size:38px; margin:0 0 10px;}
+    p{line-height:1.6; color:#c9d6f5;}
+    .btn{display:inline-block; background:#6ea8ff; color:#0b1220; padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:700;}
+    .btn2{display:inline-block; border:1px solid #2a3a5e; color:#e7eefc; padding:12px 16px; border-radius:12px; text-decoration:none;}
+    .tag{display:inline-block; padding:6px 10px; border:1px solid #2a3a5e; border-radius:999px; font-size:12px; color:#c9d6f5;}
+    .muted{color:#9fb2de; font-size:13px;}
+    .top{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px;}
+    .logo{font-weight:800; letter-spacing:.2px;}
+    ul{margin:10px 0 0; padding-right:18px;}
+    li{margin:8px 0; color:#c9d6f5;}
+    .footer{margin-top:22px; text-align:center; color:#93a8d8; font-size:12px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="logo">Good Habits · MVP</div>
+      <span class="tag">דף נחיתה ראשוני</span>
+    </div>
+
+    <div class="grid grid2">
+      <div class="card">
+        <h1>לעודד קבלות טובות והרגלים טובים — עם פידבק שמחזיק לאורך זמן</h1>
+        <p>
+          אתר קליל לניהול הרגלים ומשימות: סימון ביצוע, תצוגה ברורה של התקדמות, ופידבקים שעוזרים להתמיד.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+          <a class="btn" href="#signup">להצטרפות לבטא</a>
+          <a class="btn2" href="#demo">לראות איך זה ייראה</a>
+        </div>
+        <p class="muted" style="margin-top:12px;">
+          MVP: מתחילים פשוט — ורק אז מוסיפים הרשמה/משתמשים.
+        </p>
+      </div>
+
+      <div class="card" id="demo">
+        <h3 style="margin-top:0;">מה יהיה ב-MVP?</h3>
+        <ul>
+          <li>רשימת הרגלים + סימון ביצוע יומי</li>
+          <li>פידבק אוטומטי: רצפים, אחוזי עמידה, הודעות מעודדות</li>
+          <li>דשבורד: “מה עשיתי השבוע” + סינונים</li>
+          <li>אפשרות לבחור מה להציג (רק חלק מההרגלים/קבלות)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid3" style="margin-top:14px;">
+      <div class="card">
+        <h3 style="margin-top:0;">תצוגה טובה</h3>
+        <p>לוח שבועי/חודשי, רצפים, ושקיפות על התקדמות בלי להציף.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0;">שליטה במה עשיתי</h3>
+        <p>סינון לפי שבוע/הרגל, הערות קצרות, ומבט-על על המשימות.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0;">פידבק מחזק</h3>
+        <p>הודעות חכמות על עקביות, “חזרתי למסלול”, והתקדמות אמיתית.</p>
+      </div>
+    </div>
+
+    <div class="card" id="signup" style="margin-top:14px;">
+      <h3 style="margin-top:0;">להצטרפות לבטא</h3>
+      <p>שימי כאן קישור לטופס (Google Forms / Tally) או כתובת מייל.</p>
+      <p class="muted">דוגמה: החליפי את ה־href לקישור הטופס שלך.</p>
+      <a class="btn" href="https://forms.gle/" target="_blank" rel="noreferrer">פתיחת טופס הרשמה</a>
+    </div>
+
+    <div class="footer">© Good Habits · נבנה עם GitHub Pages</div>
+  </div>
+</body>
+</html>
